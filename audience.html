@@ -1,95 +1,105 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/slideshow.css">
-    <script src="js/slideshow.js" charset="utf-8"></script>
-    <title>The Auxy Collective</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <div class="nav-float-left">
-            <img src="images/Auxycollective.png" alt="Auxy Collective Logo" id="ac-logo">
-          </div>
-          <div class="nav-float-right">
-            <li><a href="index.html">Home</a></li>
-            <li id="selected"><a href="audience.html">Audience</a></li>
-            <li><a href="support.html">Support</a></li>
-          </div>
-          <div class="clear">
-          </div>
-        </ul>
-      </nav>
-    </header>
-    <div class="top-half">
-      <h1 class="center">Our Network</h1>
-      <h2 class="center">Below is our audience of labels and artists that enable us to give our artists<br>within the Auxy Community the recognition they deserve. </h2>
-    </div>
-    <div class="bottom-half">
-      <div class="slideshow-container">
-        <div class="slideshow-border">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 5</div>
-            <div class="text">LUNCHBOX</div>
-            <div class="slide">
-              LUNCHBOX is a label that specializes in modern genres such as liquid funk and chill / ambient tunes. They are one of The Auxy Collective's first supporters and continue to consistently support our artists and help extend the audience that they can reach.
-            </div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 5</div>
-            <div class="text">EDM Central</div>
-            <div class="slide">
-              EDM Central has been with us from the very beginning and focused on reposting and releasing future bass, melodic dubstep, chill trap, certain variants of house, and ambient tracks. Make sure to check them out and give them some love on behalf of AC.
-            </div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 5</div>
-            <div class="text">The Music Spotlight</div>
-            <div class="slide">
-              Run by one of our very own, The Music Spotlight will repost and support most genres on request, though it does not do releases on its page. It was established in mid 2017 and has been going strong since its founding by Hum4n01d.
-            </div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">4 / 5</div>
-            <div class="text">BONSAI Collective</div>
-            <div class="slide">
-              BONSAI Collective was established in 2018 by Capshun and has been rapidly expanding since its founding. It's co-curated by paaus and is with the Phuture collective family as being associated with the LUNCHBOX label.
-            </div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">5 / 5</div>
-            <div class="text">Phuture Collective</div>
-            <div class="slide">
-              Phuture Collective is our largest supporter label and is part of the Auxy Collective network with two of it's sublabels PIL Collective and TYDE. It's run by Michael and has a thriving community of music producers and label owners.
-            </div>
-          </div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <!-- The dots/circles -->
-        <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-        </div>
-      </div>
-      <br>
-
-    </div>
-  </body>
+	<head>
+		<link
+			href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700"
+			rel="stylesheet"
+		/>
+		
+		<link rel="shortcut icon" href="res/favicon.ico">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/carousel.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>The Auxy Collective</title>
+	</head>
+	
+	<body ontouchstart="">
+		<header>
+			<a href="index.html" id="logo">
+				<img src="res/logo.png" alt="The Auxy Collective" />
+			</a>
+			
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="audience.html" class="selected">Audience</a>
+				<a href="support.html">Support</a>
+			</nav>
+		</header>
+		
+		<main>
+			<h1>Our Network</h1>
+			
+			<h2>
+				Below is our audience of labels and artists that enable us to give
+				our artists within the Auxy Community the recognition they deserve.
+			</h2>
+			
+			<div class="carousel-wrapper">
+				<article id="carousel" class="carousel">
+					<section>
+						<h3>Phuture Collective</h3>
+						
+						<p>
+							Phuture Collective is our largest supporter label and is part of 
+							the Auxy Collective network with it's sublabels PIL Collective 
+							and TYDE. It's run by Michael and has a thriving community of 
+							music producers and label owners.
+						</p>
+					</section>
+					<section>
+						<h3>LUNCHBOX</h3>
+						
+						<p>
+							LUNCHBOX is a label that specializes in modern genres, such as 
+							liquid funk and chill / ambient tunes. They are one of The Auxy 
+							Collective's first supporters, and continue to consistently 
+							support our artists and help extend the audience that they can 
+							reach.
+						</p>
+					</section>
+					<section>
+						<h3>EDM Central</h3>
+						
+						<p>
+							EDM Central has been with us from the very beginning, and is 
+							focused on reposting and releasing future bass, melodic dubstep, 
+							chill trap, certain variants of house, and ambient tracks. Make 
+							sure to check them out and give them some love on behalf of AC.
+						</p>
+					</section>
+					<section>
+						<h3>BONSAI Collective</h3>
+						
+						<p>
+							BONSAI Collective was established in 2018 by Capshun and has 
+							been rapidly expanding since its founding. It's co-curated by 
+							paaus and is in the Phuture collective family, associated with 
+							the LUNCHBOX label.
+						</p>
+					</section>
+					<section>
+						<h3>The Music Spotlight</h3>
+						
+						<p>
+							Run by one of our very own, The Music Spotlight will repost and 
+							support most genres on request, though it does not release on 
+							its page. It was established in mid 2017 and has been going 
+							strong since its founding by Hum4n01d.
+						</p>
+					</section>
+				</article>
+				
+				<button id="carousel-left-button">
+					<img src="res/arrow-left.png" />
+				</button>
+				
+				<button id="carousel-right-button">
+					<img src="res/arrow-right.png" />
+				</button>
+			</div>
+		</main>
+		
+		<script src="src/carousel.js"></script>
+	</body>
 </html>
