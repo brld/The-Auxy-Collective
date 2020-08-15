@@ -1,0 +1,708 @@
+@font-face {
+  font-family: 'CartoGothic Std';
+  src: url('/resources/fonts/CartoGothicStd-Book.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'CartoGothic Std';
+  src: url('/resources/fonts/CartoGothicStd-Bold.otf');
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #0E0E0E;
+}
+
+html.FullHeightPage {
+  background-color: #272727;
+}
+
+body {
+  background-color: #0E0E0E;
+
+  margin: 0;
+}
+
+body.FullHeightPage {
+  background-image: linear-gradient(#1E1E1E, #272727);
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+.Release--newCallout {
+  color: #fff;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.05);
+
+  font-family: 'CartoGothic Std', -apple-system, BlinkMacSystemFont, 'Lucida Grande', 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+  margin: 0;
+}
+
+h2,
+h3,
+p,
+a,
+.Release--newCallout {
+  letter-spacing: 0.2px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h1,
+h2,
+.Release--newCallout {
+  font-weight: bold;
+}
+
+h2,
+p,
+.Release--newCallout {
+  font-size: 0.875em;
+}
+
+h3 {
+  font-size: 0.75em;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 150%;
+}
+
+a {
+  color: #FF7B00;
+}
+
+a:not(.Link):hover {
+  color: #FFA900;
+}
+
+a:active {
+  opacity: 0.5;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Container Blocks */
+aside {
+  margin-left: 20px;
+
+  flex-shrink: 0;
+}
+
+aside footer {
+  margin-top: 20px;
+  visibility: collapse;
+}
+
+main > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.ReleaseGrid,
+.AwardsGrid {
+  display: grid;
+
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  width: 100%;
+}
+
+.AudienceGrid {
+  display: grid;
+
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+
+  width: 100%;
+}
+
+.AudienceGrid,
+.AwardsGrid {
+  margin-bottom: 40px;
+}
+
+.Row {
+  display: grid;
+
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Wrapper {
+  padding: 40px;
+
+  max-width: 1024px;
+
+  margin: 0 auto;
+}
+
+body > .Wrapper {
+  display: flex;
+}
+
+.playlists {
+  height: 100%;
+}
+
+/* Hero */
+.Hero:not(.audience) {
+  background-image: linear-gradient(#1E1E1E, #272727);
+}
+
+.Hero--header {
+  display: flex;
+
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+.Hero--content > h1 {
+  margin-bottom: 20px;
+}
+
+/* Link */
+.Link {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 100vh;
+  color: #FFFFFF;
+  font-size: 0.75em;
+  text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 3px 3px 3px 8px;
+}
+
+.Link:hover {
+  background: rgba(255, 255, 255, 0.375);
+}
+
+.Link span {
+  word-break: break-all;
+
+  margin-right: 5px;
+}
+
+.Link img {
+  filter: drop-shadow(0px -1px 0px rgba(0, 0, 0, 0.05));
+
+  flex-shrink: 0;
+
+  width: 14px;
+  height: 14px;
+}
+
+/* Accas Link */
+.AccasLink {
+  background-color: #090909;
+  display: block;
+  position: relative;
+  
+  height: 68px;
+
+  padding: 17px;
+}
+
+.AccasLink > img:first-child {
+  height: 100%;
+}
+
+.AccasLink > img:last-child {
+  position: absolute;
+  
+  bottom: 5px;
+  right: 5px;
+
+  width: 14px;
+  height: 14px;
+}
+
+.AccasLink__mobile {
+  display: none;
+
+  width: 100%;
+}
+
+.AccasLink__mobile > img:last-child {
+  bottom: 10px;
+  right: 10px;
+
+  width: 28px;
+  height: 28px;
+}
+
+/* Release */
+.Release {
+  position: relative;
+}
+
+.Release--cover {
+  position: relative;
+  transition: opacity 0.15s linear, transform 0.15s ease-out;
+  transform: perspective(100px) translateZ(0px);
+
+  width: 100%;
+  height: 100%;
+}
+
+.Release--cover,
+.Release--details {
+  /* Enable 3D acceleration for scale transition */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+
+  perspective: 100px;
+}
+
+.Release--thumbnail {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+.Release--thumbnail img {
+  display: block;
+  border-radius: 8px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.Release--playIcon {
+  background-image: url('/resources/icons/play.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.4));
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.15s linear;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.Section::after,
+.Release--thumbnail::after {
+  background-color: transparent;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    0 0 0 1px #000,
+    inset 0 0 2px rgba(255, 255, 255, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+  content: '';
+  pointer-events: none;
+  position: absolute;
+
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.Section::after {
+  border-radius: 12px;
+}
+
+.Release--thumbnail::after {
+  border-radius: 8px;
+  transition: background-color 0.15s ease-out;
+}
+
+.Release--newCallout {
+  background-color: #FFC600;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0) 50%);
+  border-radius: 100vh;
+  box-shadow: 0 0 0 1.5px #FFF, 0 1px 3px rgba(0, 0, 0, 0.4);
+  color: #222;
+  position: absolute;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  transform: translate(50%, -50%);
+
+  top: 0;
+  right: 0;
+
+  padding: 0 6px;
+}
+
+.Release--details {
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: none;
+
+  justify-content: center;
+  flex-direction: column;
+
+  top: 0;
+
+  width: 55ch;
+  height: 100%;
+}
+
+.Release--details-left {
+  right: 100%;
+}
+
+.Release--details-right {
+  left: 100%;
+}
+
+.Release:hover .Release--details {
+  opacity: 1;
+  transition: opacity 0.15s linear, transform 0.15s ease-out;
+}
+
+.Release:hover .Release--details-left {
+  transform: translateX(-40px);
+}
+
+.Release:hover .Release--details-right {
+  transform: translateX(40px);
+}
+
+.Release--details > *:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* Partner */
+.Partner {
+  display: flex;
+
+  align-items: top;
+  flex-direction: row;
+}
+
+.Partner--logo {
+  flex-shrink: 0;
+
+  width: 100px;
+  height: 100px;
+
+  margin-right: 20px;
+}
+
+.Partner--logo img {
+  border-radius: 8px;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.2);
+
+  width: 100%;
+  height: 100%;
+}
+
+.Partner--details {
+  max-width: 100%;
+}
+
+.Partner--details > *:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.Partner--details p {
+  /* hyphens: auto; */
+  /* word-break: break-all; */
+  word-wrap: break-word;
+}
+
+/* Award */
+.Award--logo {
+  display: flex;
+
+  flex-shrink: 0;
+
+  width: 100%;
+  height: auto;
+
+  margin-bottom: 20px;
+}
+
+.Award--logo img {
+  border-radius: 8px;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.2);
+
+  width: 100%;
+  height: auto;
+}
+
+.Award--details { 
+  max-width: 100%;
+}
+
+.Award--details > *:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* Section */
+.Section {
+  background-color: #303030;
+  border-radius: 12px;
+  position: relative;
+}
+
+.Section--content {
+  padding: 10px 20px 20px 20px;
+}
+
+.Section--content > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.Section--header {
+  background: linear-gradient(rgba(255, 255, 255, 0.115), rgba(255, 255, 255, 0.015) 50%, rgba(255, 255, 255, 0) 50%);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+
+  padding: 8px 15px;
+}
+
+.Section--header img {
+  margin-right: 8px;
+
+  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.4));
+}
+
+.Section--linkGroup {
+  display: flex;
+}
+
+.Section--linkGroup > .Link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.audienceColumn--Header {
+  width: 30%;
+  float: left;
+}
+
+.audienceColumn--Content {
+  width: 30%;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+#Interactive {
+  width: 100%;
+}
+
+#interactiveButton {
+  background-color: #111;
+  margin-bottom: 20px;
+  padding: 32px 30px;
+  width: 100%;
+  border-radius: 19px;
+  cursor: pointer;
+}
+
+#interactiveButton a {
+  margin-top: 10px;
+}
+
+#interactiveButton p {
+  margin-top: 5px;
+}
+
+#interactiveCubeImage {
+  float: left;
+  margin-right: 25px;
+}
+
+#interactiveIframe {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1014px) {
+  .AwardsGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .Award--logo img {
+    object-fit: cover;
+
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .ReleaseGrid:hover > .Release:not(:hover) .Release--cover {
+    filter: blur(8px);
+    opacity: 0.25;
+  }
+
+  /* Disable blur in Firefox */
+  @-moz-document url-prefix() {
+    .ReleaseGrid:hover > .Release:not(:hover) .Release--cover {
+      filter: none;
+      opacity: 0.125;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ReleaseGrid {
+    grid-gap: 30px;
+  }
+
+  .Release--details {
+    display: none;
+  }
+
+  .Row {
+    display: block;
+  }
+
+  .Row > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 823px) {
+  body > .Wrapper {
+    display: block;
+  }
+
+  aside {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  aside > iframe {
+    width: 100%;
+  }
+
+  main footer {
+    display: none;
+  }
+
+  aside footer {
+    display: block;
+    visibility: visible;
+  }
+
+  .AudienceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .AwardsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Award--logo img {
+    height: 215px;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .Release:hover {
+    z-index: 1;
+  }
+
+  .Release:hover:not(:active) .Release--cover {
+    transform: perspective(100px) translateZ(3px);
+  }
+
+  .Release:hover .Release--playIcon {
+    opacity: 1;
+  }
+
+  .Release:hover .Release--thumbnail::after {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .Award--details h1 {
+    font-size: 1.5em;
+  }
+
+  h2,
+  p,
+  .Release--newCallout {
+    font-size: 1em;
+  }
+
+  .Hero--header {
+    margin-bottom: 30px;
+  }
+
+  .Link {
+    font-size: 0.875em;
+  }
+
+  .ReleaseGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Wrapper {
+    padding: 30px;
+  }
+
+  .AccasLink {
+    display: none;
+  }
+
+  .AccasLink__mobile {
+    display: block;
+  }
+
+  .AwardsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .Award--logo {
+    width: 250px;
+  }
+
+  .Award--logo img {
+    height: 175px;
+  }
+
+  #Interactive {
+    display: none;
+  }
+}
