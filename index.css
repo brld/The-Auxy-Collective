@@ -711,7 +711,13 @@ body > .Wrapper {
     margin-right: 0;
     margin-bottom: 10px;
   }
+  
+  #Interactive {
+    display: none;
+  }
+}
 
+@supports (-webkit-touch-callout: none) {
   #Interactive {
     display: none;
   }
