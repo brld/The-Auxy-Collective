@@ -566,12 +566,12 @@ body > .Wrapper {
   display: block;
   width: 100%;
   box-sizing: border-box;
-  font-family: "Open-sans", Arial, sans-serif;
 }
 
 .accordionItemHeading {
   cursor:pointer;
   margin:0px 0px 10px 0px;
+  padding: 3px 8px 3px 8px;
   color:#fff;
   width:100%;
   box-sizing: border-box;
@@ -592,23 +592,14 @@ body > .Wrapper {
   padding-top: 20px;
   width: 100%;
   display:block;
-  -webkit-transform: scaleY(1);
-  -o-transform: scaleY(1);
-  -ms-transform: scaleY(1);
-  transform: scaleY(1);
-  -webkit-transform-origin: top;
-  -o-transform-origin: top;
-  -ms-transform-origin: top;
-  transform-origin: top;
-
-  -webkit-transition: -webkit-transform 0.4s ease-out;
-  -o-transition: -o-transform 0.4s ease;
-  -ms-transition: -ms-transform 0.4s ease;
-  transition: transform 0.4s ease;
   box-sizing: border-box;
 }
 
-.open .accordionItemHeading {
+.accordionItemContent > h1 {
+  margin-bottom: 20px;
+}
+
+.accordionItemHeading.open {
   text-decoration: underline;
   text-underline-offset: 5px;
   text-decoration-color: white;
@@ -620,6 +611,19 @@ body > .Wrapper {
   transition: 0.4s ease;
 
   position: relative;
+
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 100vh;
+  color: #FFFFFF;
+  text-decoration: none;
+
+  align-items: center;
+
+  padding: 3px 8px 3px 8px;
+}
+
+span {
+  font-family: 'CartoGothic Std';
 }
 
 @media screen and (max-width: 1014px) {

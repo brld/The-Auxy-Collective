@@ -6,16 +6,22 @@ function toggle() {
 }
 
 var accItem = document.getElementsByClassName('accordionItem');
-var accHD = document.getElementsByClassName('accordionItemHeading');
+var accHD = Array.prototype.slice.call(document.getElementsByClassName('accordionItemHeading'));
 for (i = 0; i < accHD.length; i++) {
     accHD[i].addEventListener('click', toggleItem, false);
 }
 function toggleItem() {
-    var itemClass = this.parentNode.parentNode.className;
+    var index = Array.prototype.indexOf.call(accHD, this)
+    var itemClass = accItem[index].className;
+    if (itemClass == 'accordionItem open') { 
+        return;
+    }
     for (i = 0; i < accItem.length; i++) {
         accItem[i].className = 'accordionItem close';
+        accHD[i].className = 'accordionItemHeading close';
     }
     if (itemClass == 'accordionItem close') {
-        this.parentNode.parentNode.className = 'accordionItem open';
+        accItem[index].className = 'accordionItem open';
+        accHD[index].className = 'accordionItemHeading open';
     }
 }
