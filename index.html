@@ -3,12 +3,14 @@
 	<head>
 		<link rel="shortcut icon" href="resources/favicon.ico">
 		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="flickity.css" media="screen">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>AC Community</title>
 	</head>
 
 	<body ontouchstart="">
+		<script src="src/flickity.pkgd.min.js"></script>
 		<div class="Hero">
 			<div class="Wrapper">
 				<header class="Hero--header">
@@ -23,151 +25,161 @@
 				<section class="Hero--content">
 					<h1>Releases</h1>
 
-					<div class="ReleaseGrid"><article class="Release">
-						<article class="Release--cover">
-							<a href="https://soundcloud.com/auxycollective/dream-avenue" target=“_blank” class="Release--thumbnail">
-								<img src="resources/releases/dreamAvenue.png" alt="Dream Avenue">
-								<div class="Release--playIcon"></div>
-							</a>
 
-							<span class="Release--newCallout">New</span>
-						</article>
+					<div class="main-gallery js-flickity data-flickity-options='{ "cellAlign": "center", "contain": true }">
+						<div class="gallery-cell">
+							<div class="ReleaseGrid">
+								<article class="Release">
+									<article class="Release--cover">
+										<a href="https://soundcloud.com/auxycollective/dream-avenue" target=“_blank” class="Release--thumbnail">
+											<img src="resources/releases/dreamAvenue.png" alt="Dream Avenue">
+											<div class="Release--playIcon"></div>
+										</a>
 
-						<div class="Release--details Release--details-right">
-							<h1>Dream Avenue</h1>
-							<h2>ft. Pristinity, Zhander, Dylan Jones, Vokon, Electrify, sn.ow.y, Twizard, Selenite, console.frog</h2>
-							<p>Wave has no confines in this amalgamation of retrowave, ambient, and futuristic synth soundscapes brought to you by 9 of AC's most talented minds.</p>
-							<h3>May 23, 2021</h3>
+										<span class="Release--newCallout">New</span>
+									</article>
+
+									<div class="Release--details Release--details-right">
+										<h1>Dream Avenue</h1>
+										<h2>ft. Pristinity, Zhander, Dylan Jones, Vokon, Electrify, sn.ow.y, Twizard, Selenite, console.frog</h2>
+										<p>Wave has no confines in this amalgamation of retrowave, ambient, and futuristic synth soundscapes brought to you by 9 of AC's most talented minds.</p>
+										<h3>May 23, 2021</h3>
+									</div>
+								</article>
+
+								<article class="Release">
+									<article class="Release--cover">
+										<a href="https://soundcloud.com/auxycollective/kismet" target=“_blank” class="Release--thumbnail">
+											<img src="resources/releases/kismet.png" alt="Kismet">
+											<div class="Release--playIcon"></div>
+										</a>
+									</article>
+
+									<div class="Release--details Release--details-right">
+										<h1>Kismet</h1>
+										<h2>ft. Mr. Mooo, Voltur, CLOME, tictactø, Vepium, Xicon, SpaghettiSauce</h2>
+										<p>A fresh, experimental take on future bass brought to you by 7 creative minds in one of the hardest-hitting megacollaborations to date.</p>
+										<h3>May 30, 2020</h3>
+									</div>
+								</article>
+
+								<article class="Release">
+									<article class="Release--cover">
+									<a href="https://soundcloud.com/auxycollective/euphoria" target=“_blank” class="Release--thumbnail">
+										<img src="resources/releases/euphoria.png" alt="Euphoria">
+										<div class="Release--playIcon"></div>
+									</a>
+									</article>
+
+									<div class="Release--details Release--details-left">
+										<h1>Euphoria</h1>
+										<h2>ft. Joel Garcia, The Osprey, Twizard, GreyOldTwit, Jelmø, Bastyon, Jax, paroxyzm, kheeshKP, NeXus</h2>
+										<p>10 of the community's finest join together to bring you Euphoria, a lively summer-themed track to end the season with a bang.</p>
+										<h3>September 30, 2019</h3>
+									</div>
+								</article>
+
+								<article class="Release">
+									<article class="Release--cover">
+										<a href="https://soundcloud.com/auxycollective/looking-back" target=“_blank” class="Release--thumbnail">
+											<img src="resources/releases/lookingBack.png" alt="Looking Back">
+											<div class="Release--playIcon"></div>
+										</a>
+									</article>
+
+									<div class="Release--details Release--details-left">
+										<h1>Looking Back</h1>
+										<h2>ft. cuber, AzureOnyx, Ekstrak, Jelmø, Mr. Serpent, Viiitality, surf, sn.ow.y, SpaghettiSauce, console.frog</h2>
+										<p>10 talented producers from the community join together to bring you "Looking Back", an atmospheric lo-fi beat tape comprised of multiple unique styles.</p>
+										<h3>June 22, 2019</h3>
+									</div>
+								</article>
+
+								<article class="Release">
+									<article class="Release--cover">
+										<a href="https://soundcloud.com/auxycollective/rush" target=“_blank” class="Release--thumbnail">
+											<img src="resources/releases/rush.png" alt="Rush">
+											<div class="Release--playIcon"></div>
+										</a>
+									</article>
+
+									<div class="Release--details Release--details-right">
+										<h1>Rush</h1>
+										<h2>ft. Xlimator, Cornea, XN, Zephyr, The Osprey, JL Music</h2>
+										<p>Six talented dubstep producers from the collective bring you a darker inspired, heavier track.</p>
+										<h3>March 9, 2019</h3>
+									</div>
+								</article>
+
+								<article class="Release">
+									<article class="Release--cover">
+										<a href="https://soundcloud.com/auxycollective/interstate-5" target=“_blank” class="Release--thumbnail">
+											<img src="resources/releases/interstate5.png" alt="Interstate 5">
+											<div class="Release--playIcon"></div>
+										</a>
+									</article>
+
+									<div class="Release--details Release--details-right">
+										<h1>Interstate 5</h1>
+										<h2>ft. Azure Onyxscore, Hum4n01d, Arimyth, Mr. Serpent, console.frog, SpaghettiSauce, INDIR3CT, Glacial Viper</h2>
+										<p>The West Coast members of the community present Interstate 5—a multi-genred 8 person megacollaboration.</p>
+										<h3>February 10, 2019</h3>
+									</div>
+								</article>
+
+								<article class="Release">
+									<article class="Release--cover">
+										<a href="https://soundcloud.com/auxycollective/trick-or-treat" target=“_blank” class="Release--thumbnail">
+											<img src="resources/releases/trickOrTreatingWithTheSpookGang.png" alt="Trick or Treating with the Spook Gang">
+											<div class="Release--playIcon"></div>
+										</a>
+									</article>
+
+									<div class="Release--details Release--details-left">
+										<h1>Trick or Treating with the Spook Gang</h1>
+										<h2>ft. XN, Rager, JL Music, stereofield, FLB100, Glacial Viper, HYDRANS, Mr. Mooo, polarzero</h2>
+										<p>In one of the largest AC collaborations yet... we present "Trick or Treating with the Spook Gang", a spooky track featuring 9 talented artists from the community.</p>
+										<h3>October 31, 2018</h3>
+									</div>
+								</article>
+
+								<article class="Release">
+									<article class="Release--cover">
+										<a href="https://soundcloud.com/auxycollective/plains" target=“_blank” class="Release--thumbnail">
+											<img src="resources/releases/plains.png" alt="Plains">
+											<div class="Release--playIcon"></div>
+										</a>
+									</article>
+
+									<div class="Release--details Release--details-left">
+										<h1>Plains</h1>
+										<h2>ft. Viiitality, Andrew Adams, Bassment Chemists, E/E, Breezymode, Peløton</h2>
+										<p>Back at it again with another community release, this time from the midwest crew!</p>
+										<h3>October 13, 2018</h3>
+									</div>
+								</article>
+							</div>
 						</div>
-					</article>
 
-						<article class="Release">
-							<article class="Release--cover">
-								<a href="https://soundcloud.com/auxycollective/kismet" target=“_blank” class="Release--thumbnail">
-									<img src="resources/releases/kismet.png" alt="Kismet">
-									<div class="Release--playIcon"></div>
-								</a>
-							</article>
+						<div class="gallery-cell">
+							<div class="ReleaseGrid">
+								<article class="Release">
+									<article class="Release--cover">
+										<a href="https://soundcloud.com/auxycollective/coastal" target=“_blank” class="Release--thumbnail">
+											<img src="resources/releases/coastal.png" alt="Coastal">
+											<div class="Release--playIcon"></div>
+										</a>
+									</article>
 
-							<div class="Release--details Release--details-right">
-								<h1>Kismet</h1>
-								<h2>ft. Mr. Mooo, Voltur, CLOME, tictactø, Vepium, Xicon, SpaghettiSauce</h2>
-								<p>A fresh, experimental take on future bass brought to you by 7 creative minds in one of the hardest-hitting megacollaborations to date.</p>
-								<h3>May 30, 2020</h3>
+									<div class="Release--details Release--details-right">
+										<h1>Coastal</h1>
+										<h2>ft. sn.ow.y, Polar, stereofield, Graye, Insolidarity, AnirudhKhanna, HELIXX, LimeZ</h2>
+										<p>Straight from the community, AC presents the Coastal megacollab from community members off the East Coast.</p>
+										<h3>August 13, 2018</h3>
+									</div>
+								</article>
 							</div>
-						</article>
-
-						<article class="Release">
-							<article class="Release--cover">
-							<a href="https://soundcloud.com/auxycollective/euphoria" target=“_blank” class="Release--thumbnail">
-								<img src="resources/releases/euphoria.png" alt="Euphoria">
-								<div class="Release--playIcon"></div>
-							</a>
-							</article>
-
-							<div class="Release--details Release--details-left">
-								<h1>Euphoria</h1>
-								<h2>ft. Joel Garcia, The Osprey, Twizard, GreyOldTwit, Jelmø, Bastyon, Jax, paroxyzm, kheeshKP, NeXus</h2>
-								<p>10 of the community's finest join together to bring you Euphoria, a lively summer-themed track to end the season with a bang.</p>
-								<h3>September 30, 2019</h3>
-							</div>
-						</article>
-
-						<article class="Release">
-							<article class="Release--cover">
-								<a href="https://soundcloud.com/auxycollective/looking-back" target=“_blank” class="Release--thumbnail">
-									<img src="resources/releases/lookingBack.png" alt="Looking Back">
-									<div class="Release--playIcon"></div>
-								</a>
-							</article>
-
-							<div class="Release--details Release--details-left">
-								<h1>Looking Back</h1>
-								<h2>ft. cuber, AzureOnyx, Ekstrak, Jelmø, Mr. Serpent, Viiitality, surf, sn.ow.y, SpaghettiSauce, console.frog</h2>
-								<p>10 talented producers from the community join together to bring you "Looking Back", an atmospheric lo-fi beat tape comprised of multiple unique styles.</p>
-								<h3>June 22, 2019</h3>
-							</div>
-						</article>
-
-						<article class="Release">
-							<article class="Release--cover">
-								<a href="https://soundcloud.com/auxycollective/rush" target=“_blank” class="Release--thumbnail">
-									<img src="resources/releases/rush.png" alt="Rush">
-									<div class="Release--playIcon"></div>
-								</a>
-							</article>
-
-							<div class="Release--details Release--details-right">
-								<h1>Rush</h1>
-								<h2>ft. Xlimator, Cornea, XN, Zephyr, The Osprey, JL Music</h2>
-								<p>Six talented dubstep producers from the collective bring you a darker inspired, heavier track.</p>
-								<h3>March 9, 2019</h3>
-							</div>
-						</article>
-
-						<article class="Release">
-							<article class="Release--cover">
-								<a href="https://soundcloud.com/auxycollective/interstate-5" target=“_blank” class="Release--thumbnail">
-									<img src="resources/releases/interstate5.png" alt="Interstate 5">
-									<div class="Release--playIcon"></div>
-								</a>
-							</article>
-
-							<div class="Release--details Release--details-right">
-								<h1>Interstate 5</h1>
-								<h2>ft. Azure Onyxscore, Hum4n01d, Arimyth, Mr. Serpent, console.frog, SpaghettiSauce, INDIR3CT, Glacial Viper</h2>
-								<p>The West Coast members of the community present Interstate 5—a multi-genred 8 person megacollaboration.</p>
-								<h3>February 10, 2019</h3>
-							</div>
-						</article>
-
-						<article class="Release">
-							<article class="Release--cover">
-								<a href="https://soundcloud.com/auxycollective/trick-or-treat" target=“_blank” class="Release--thumbnail">
-									<img src="resources/releases/trickOrTreatingWithTheSpookGang.png" alt="Trick or Treating with the Spook Gang">
-									<div class="Release--playIcon"></div>
-								</a>
-							</article>
-
-							<div class="Release--details Release--details-left">
-								<h1>Trick or Treating with the Spook Gang</h1>
-								<h2>ft. XN, Rager, JL Music, stereofield, FLB100, Glacial Viper, HYDRANS, Mr. Mooo, polarzero</h2>
-								<p>In one of the largest AC collaborations yet... we present "Trick or Treating with the Spook Gang", a spooky track featuring 9 talented artists from the community.</p>
-								<h3>October 31, 2018</h3>
-							</div>
-						</article>
-
-						<article class="Release">
-							<article class="Release--cover">
-								<a href="https://soundcloud.com/auxycollective/plains" target=“_blank” class="Release--thumbnail">
-									<img src="resources/releases/plains.png" alt="Plains">
-									<div class="Release--playIcon"></div>
-								</a>
-							</article>
-
-							<div class="Release--details Release--details-left">
-								<h1>Plains</h1>
-								<h2>ft. Viiitality, Andrew Adams, Bassment Chemists, E/E, Breezymode, Peløton</h2>
-								<p>Back at it again with another community release, this time from the midwest crew!</p>
-								<h3>October 13, 2018</h3>
-							</div>
-						</article>
-
-						<article class="Release">
-							<article class="Release--cover">
-								<a href="https://soundcloud.com/auxycollective/coastal" target=“_blank” class="Release--thumbnail">
-									<img src="resources/releases/coastal.png" alt="Coastal">
-									<div class="Release--playIcon"></div>
-								</a>
-							</article>
-
-							<div class="Release--details Release--details-right">
-								<h1>Coastal</h1>
-								<h2>ft. sn.ow.y, Polar, stereofield, Graye, Insolidarity, AnirudhKhanna, HELIXX, LimeZ</h2>
-								<p>Straight from the community, AC presents the Coastal megacollab from community members off the East Coast.</p>
-								<h3>August 13, 2018</h3>
-							</div>
-						</article>
+						</div>
 					</div>
 				</section>
 			</div>
