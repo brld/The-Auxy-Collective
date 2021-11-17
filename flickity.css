@@ -6,10 +6,6 @@ https://flickity.metafizzy.co
   position: relative;
 }
 
-.js-flickity {
-  width: 100% !important;
-}
-
 .flickity-enabled:focus { outline: none; }
 
 .flickity-viewport {
@@ -142,8 +138,7 @@ https://flickity.metafizzy.co
 
 .gallery-cell {
   width: 100%;
-  padding: 10px;
-  counter-increment: gallery-cell;
+  padding: 15px 10px 10px 10px;
 }
 
 /* cell number */
