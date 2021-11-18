@@ -3,14 +3,13 @@
 	<head>
 		<link rel="shortcut icon" href="resources/favicon.ico">
 		<link rel="stylesheet" href="index.css">
-		<link rel="stylesheet" href="flickity.css" media="screen">
+		<link rel="stylesheet" href="slideshow.css" media="screen">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>AC Community</title>
 	</head>
 
 	<body ontouchstart="">
-		<script src="src/flickity.pkgd.min.js"></script>
 		<div class="Hero">
 			<div class="Wrapper">
 				<header class="Hero--header">
@@ -26,8 +25,8 @@
 					<h1>Releases</h1>
 
 
-					<div class="main-gallery js-flickity" data-flickity-options='{ "contain": true, "setGallerySize": true, "adaptiveHeight": false }'>
-						<div class="gallery-cell" style="position: absolute; left: 0%;">
+					<div class="slideshow-container">
+						<div class="mySlides">
 							<div class="ReleaseGrid">
 								<article class="Release">
 									<article class="Release--cover">
@@ -161,7 +160,7 @@
 							</div>
 						</div>
 
-						<div class="gallery-cell" style="position: absolute; left: 0%;">
+						<div class="mySlides">
 							<div class="ReleaseGrid">
 								<article class="Release">
 									<article class="Release--cover">
@@ -180,6 +179,14 @@
 								</article>
 							</div>
 						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+
+					<div style="text-align:center" class="dots">
+					  <span class="dot" onclick="currentSlide(1)"></span>
+					  <span class="dot" onclick="currentSlide(2)"></span>
 					</div>
 				</section>
 			</div>
@@ -259,5 +266,6 @@
 				</footer>
 			</aside>
 		</div>
+		<script src="src/slideshow.js"></script>
 	</body>
 </html>

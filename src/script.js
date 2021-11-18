@@ -13,7 +13,7 @@ for (i = 0; i < accHD.length; i++) {
 function toggleItem() {
     var index = Array.prototype.indexOf.call(accHD, this)
     var itemClass = accItem[index].className;
-    if (itemClass == 'accordionItem open') { 
+    if (itemClass == 'accordionItem open') {
         return;
     }
     for (i = 0; i < accItem.length; i++) {
