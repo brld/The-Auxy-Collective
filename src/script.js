@@ -1,6 +1,20 @@
-function toggle() {
-    var iframe = document.getElementById("interactiveIframe");
-    var button = document.getElementById("interactiveButton");
+function toggle2020() {
+    var iframe = document.getElementById("interactiveIframe2020");
+    var button = document.getElementById("interactiveButton2020");
+    iframe.classList.remove("hidden");
+    button.classList.add("hidden");
+}
+
+function toggle2021() {
+    var iframe = document.getElementById("interactiveIframe2021");
+    var button = document.getElementById("interactiveButton2021");
+    iframe.classList.remove("hidden");
+    button.classList.add("hidden");
+}
+
+function toggle2022() {
+    var iframe = document.getElementById("interactiveIframe2022");
+    var button = document.getElementById("interactiveButton2022");
     iframe.classList.remove("hidden");
     button.classList.add("hidden");
 }
