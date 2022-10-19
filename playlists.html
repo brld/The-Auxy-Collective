@@ -3,6 +3,7 @@
 	<head>
 		<link rel="shortcut icon" href="resources/favicon.ico">
 		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="slideshow.css" media="screen">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>AC | Playlists</title>
@@ -17,13 +18,61 @@
 
 				<section class="Hero--content">
 					<h1>Playlists</h1>
-					<h2 style="margin-bottom: 40px;">Coming soon...</h2>
 
-					<footer>
-						<p>© 2018-2022 AC Community</p>
-					</footer>
-				</section>
+					<div class="slideshow-container">
+						<div class="mySlides">
+							<div class="PlaylistGrid">
+								<article class="Release">
+									<article class="Release--cover">
+										<a href="https://soundcloud.com/auxycollective/dream-avenue" target=“_blank” class="Release--thumbnail">
+											<img src="resources/acba/09-22.jpg" alt="Dream Avenue">
+											<div class="Release--playIcon"></div>
+										</a>
+
+										<span class="Release--newCallout">New</span>
+									</article>
+
+									<div class="Release--details Release--details-right">
+										<h1>AC Back Alley - September Selects (2022)</h1>
+										<h2>ft. kadde, Foewi, voma, Pristinity, Hern, :exro, alch_18, Stardust, iBAC, Swimmer Sounds, Zhander, orangehatclub</h2>
+										<h3>October, 2022</h3>
+									</div>
+								</article>
+
+								<article class="Release">
+									<article class="Release--cover">
+										<a href="https://soundcloud.com/auxycollective/kismet" target=“_blank” class="Release--thumbnail">
+											<img src="resources/acba/08-22.jpg" alt="Kismet">
+											<div class="Release--playIcon"></div>
+										</a>
+									</article>
+
+									<div class="Release--details Release--details-right">
+										<h1>AC Back Alley - August Selects (2022)</h1>
+										<h2>ft. iBAC, kadde, Vokon, addison, RIFTER, FRM, Pavan Cressy, alch_18, COLLIXION, ZytrikX, Hern, Zhander, Pristinity, Potatert0t, Peregrihn</h2>
+										<h3>September, 2022</h3>
+									</div>
+								</article>
+
+
+							</div>
+						</div>
+
+						<!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  					<a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+					</div>
+
+					<!-- <div style="text-align:center" class="dots">
+					  <span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+					</div> -->
+
+				</section><br>
+				<footer>
+					<p>© 2018-2022 AC Community</p>
+				</footer>
 			</div>
 		</div>
+		<script src="src/slideshow.js"></script>
 	</body>
 </html>

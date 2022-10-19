@@ -123,6 +123,15 @@ main > *:not(:last-child) {
   width: 100%;
 }
 
+.PlaylistGrid {
+  display: grid;
+
+  grid-gap: 36px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  width: 100%;
+}
+
 .AudienceGrid {
   display: grid;
 
@@ -641,6 +650,11 @@ span {
 
 @media screen and (min-width: 999px) {
   .ReleaseGrid:hover > .Release:not(:hover) .Release--cover {
+    filter: blur(8px);
+    opacity: 0.25;
+  }
+
+  .PlaylistGrid:hover > .Release:not(:hover) .Release--cover {
     filter: blur(8px);
     opacity: 0.25;
   }
