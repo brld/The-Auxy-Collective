@@ -717,6 +717,10 @@ span {
     grid-template-columns: 1fr 1fr;
   }
 
+  .PlaylistGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .Award--logo img {
     height: 215px;
   }
@@ -780,6 +784,10 @@ span {
   }
 
   .AwardsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .PlaylistGrid {
     grid-template-columns: 1fr;
   }
 
